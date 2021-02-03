@@ -12,7 +12,7 @@ import (
 	_ "github.com/mattn/go-sqlite3"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/pkazmierczak/textkernel"
+	"github.com/pkazmierczak/population"
 )
 
 var (
@@ -82,7 +82,7 @@ func main() {
 	defer sqlite.Close()
 
 	// create a new DB instance
-	db := textkernel.NewDB(sqlite)
+	db := population.NewDB(sqlite)
 
 	// check if we're asked to put some geonames data into the DB
 	if len(os.Args) > 1 {

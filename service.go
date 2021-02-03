@@ -1,4 +1,4 @@
-package textkernel
+package population
 
 import (
 	"database/sql"

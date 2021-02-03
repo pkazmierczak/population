@@ -10,10 +10,15 @@ to query the service is:
 
 ## Installation and running
 
-1. Unzip the `cmd/population/db.sqlite3.zip` archive.
-2. Install [Go](https://golang.org/dl/), [gcc](https://gcc.gnu.org) and
+1. Install [Go](https://golang.org/dl/), [gcc](https://gcc.gnu.org) and
    [make](https://www.gnu.org/software/make/) (macOS users can simply `brew
    install go`, make and gcc come pre-installed with the system).
+2. Get some population data from
+   [geonames](https://www.geonames.org/countries/) and populate the database:
+```
+> make release
+> ./population load data_file.txt
+```
 3. Run `make release` and then simply `./population`. The service runs on port
    8080 by default, but you can specify a different port and some other
    options, see `-h`.

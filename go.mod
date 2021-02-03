@@ -1,4 +1,4 @@
-module github.com/pkazmierczak/textkernel
+module github.com/pkazmierczak/population
 
 go 1.14
 
